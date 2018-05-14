@@ -438,7 +438,7 @@ section {
         left: 0;
         position: fixed;
         display: inline-block;
-        top: 33%;
+        top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
