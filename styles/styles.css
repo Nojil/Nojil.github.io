@@ -438,10 +438,15 @@ section {
         left: 0;
         position: fixed;
         display: inline-block;
-        top: 22%;
+        top: 33%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+    }
+    .background-text {
+        font-size: 62px;
+        color: #1C5E91;
+        line-height: 58px;
     }
     .sm-nav-toggler {
         display: block;
@@ -490,7 +495,6 @@ section {
     svg.svg-inline--fa.fa-times.fa-w-12 {
         display: none;
     }
-
     .nav-open svg.svg-inline--fa.fa-bars.fa-w-14 {
         display: none;
     }
