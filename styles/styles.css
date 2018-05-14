@@ -80,7 +80,7 @@ main {
     text-align: center !important;
 }
 
-.intro-hero-img{
+.intro-hero-img {
     width: 270px;
     border-radius: 50%;
 }
@@ -133,13 +133,13 @@ section {
     list-style: none;
 }
 
-.personal-info > li {
+.personal-info>li {
     width: 50%;
     float: left;
     padding-bottom: 5px;
 }
 
-.personal-info > li > strong {
+.personal-info>li>strong {
     display: inline-block;
     font-weight: 500;
     margin-right: 10px;
@@ -155,7 +155,6 @@ section {
 .card-body {
     text-align: center;
 }
-
 
 .html-Icon {
     color: #E24E30;
@@ -180,8 +179,6 @@ section {
 .fa-square {
     color: #000;
 }
-
-
 
 @keyframes blink {
     0% {
@@ -426,4 +423,78 @@ section {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+}
+
+.sm-nav-toggler {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .floating-menu {
+        border-radius: 100px;
+        z-index: 999;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        left: 0;
+        position: fixed;
+        display: inline-block;
+        top: 22%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .sm-nav-toggler {
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left: 0;
+        top: 0;
+        border-radius: 50px;
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .sm-nav-toggler>.svg-inline--fa {
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        color: #fff;
+    }
+    .main-menu {
+        padding-top: 60px;
+        visibility: hidden;
+    }
+    .menu-bg {
+        background-image: -webkit-linear-gradient(top, #1C5E91 0%, #167699 100%);
+        background-image: -o-linear-gradient(top, #1C5E91 0%, #167699 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#1C5E91), to(#167699));
+        background-image: linear-gradient(to bottom, #1C5E91 0%, #167699 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1C5E91', endColorstr='#FF167699', GradientType=0);
+        height: 60px;
+    }
+    .nav-open .menu-bg {
+        height: 100%;
+    }
+    .nav-open .main-menu {
+        visibility: visible;
+    }
+    svg.svg-inline--fa.fa-times.fa-w-12 {
+        display: none;
+    }
+
+    .nav-open svg.svg-inline--fa.fa-bars.fa-w-14 {
+        display: none;
+    }
+    .nav-open svg.svg-inline--fa.fa-times.fa-w-12 {
+        display: inline-block;
+    }
 }

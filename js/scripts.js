@@ -4,7 +4,7 @@ $(function () {
         typeSpeed: 0,
         loop: true
     });
-}); 
+});
 
 /// smooth scroll
 $('.scrolling').on('click', function (event) {
@@ -29,4 +29,8 @@ $('.scroll-top').on('click', function () {
         scrollTop: 0
     }, 600);
     return false;
+});
+
+$('.sm-nav-toggler').on('click', function () {
+    $('.floating-menu').toggleClass('nav-open');
 });
