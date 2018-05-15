@@ -13,6 +13,10 @@ main {
     margin-bottom: 200%;
 }
 
+img {
+    max-width: 100%;
+}
+
 .floating-menu {
     border-radius: 100px;
     z-index: 999;
@@ -429,6 +433,37 @@ section {
     display: none;
 }
 
+.service-block {
+    background: #fff;
+    -webkit-box-shadow: 0 0 50px 0 rgba(43, 43, 43, 0.1);
+    box-shadow: 0 0 50px 0 rgba(43, 43, 43, 0.1);
+    padding: 30px 20px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+.sr-icon img {
+    max-height: 120px;
+    width: auto;
+}
+
+.service-block .block-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.block-title {
+    font-size: 22px;
+    font-weight: normal;
+    color: #000;
+}
+
+@media (max-width: 767px) {
+    .personal-info>li {
+        width: 100%;
+        float: none;
+    }
+}
 @media screen and (max-width: 991px) {
     .floating-menu {
         border-radius: 100px;
@@ -444,7 +479,7 @@ section {
         transform: translateY(-50%);
     }
     .background-text {
-        font-size: 62px;
+        font-size: 55px;
         color: #1C5E91;
         line-height: 58px;
     }
