@@ -164,6 +164,10 @@ section {
     text-align: center;
 }
 
+.card-header {
+    background-color: #fff;
+}
+
 .html-Icon {
     color: #E24E30;
 }
@@ -380,6 +384,7 @@ section {
     border-radius: 4px;
     margin-left: 50px;
     position: relative;
+    background-color: #fff;
 }
 
 .edu-info-text:before {
