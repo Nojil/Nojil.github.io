@@ -467,6 +467,19 @@ section {
     color: #000;
 }
 
+.content-container {
+    border-bottom: 1px solid #E3E9F0;
+}
+
+.btn-custom {
+    color: #fff !important;
+    background-image: -webkit-linear-gradient(top, #1C5E91 0%, #167699 100%);
+    background-image: -o-linear-gradient(top, #1C5E91 0%, #167699 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1C5E91), to(#167699));
+    background-image: linear-gradient(to bottom, #1C5E91 0%, #167699 100%);
+    background-repeat: repeat-x;
+}
+
 @media (max-width: 767px) {
     .personal-info>li {
         width: 100%;
