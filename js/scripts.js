@@ -1,6 +1,6 @@
 $(function () {
     $(".typed").typed({
-        strings: ["a Web Developer.", "a Teacher.", "an Entrepreneur.", "a Designer.", "a UI / UX Engineer."],
+        strings: ["a Web Developer.", "a Teacher.", "an Entrepreneur.", "a Designer.", "a UI Engineer.", "a UX Engineer"],
         typeSpeed: 0,
         loop: true
     });
